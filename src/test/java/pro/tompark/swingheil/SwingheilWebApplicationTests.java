@@ -1,4 +1,4 @@
-package pro.tompark.swingheil.web;
+package pro.tompark.swingheil;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
