@@ -1,12 +1,13 @@
-package pro.tompark.swingheil;
+package pro.tompark.swingheil.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import pro.tompark.swingheil.SwingheilWebApplication;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = SwingheilWebApplication.class)
 public class SwingheilWebApplicationTests {
 
     @Test

@@ -1,4 +1,4 @@
-package pro.tompark.swingheil.web;
+package pro.tompark.swingheil.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

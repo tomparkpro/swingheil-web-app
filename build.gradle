@@ -2,7 +2,6 @@ buildscript {
     ext {
         springBootVersion = '2.0.1.RELEASE'
         querydslVersion = '4.1.4'
-        swingheilVersion = '1.0-SNAPSHOT'
     }
     repositories {
         mavenCentral()
@@ -31,19 +30,12 @@ repositories {
 
 
 dependencies {
-    compile 'pro.tompark.swingheil:swingheil-service'
+    compile ('pro.tompark.swingheil:swingheil-service')
 
-    compile("javax.inject:javax.inject:1")
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-web')
 
-    //QueryDSL
-    compile("com.querydsl:querydsl-core:${querydslVersion}")
-    compile("com.querydsl:querydsl-jpa:${querydslVersion}")
-    querydslapt("com.querydsl:querydsl-apt:${querydslVersion}")
-
-    runtime('com.h2database:h2')
-    compileOnly('org.projectlombok:lombok')
+    runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
