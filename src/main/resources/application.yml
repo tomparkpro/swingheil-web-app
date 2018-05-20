@@ -1,0 +1,70 @@
+spring:
+  profiles:
+    active: local
+
+# for DB connection
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    username: ${SWINGHEIL_DB_USERNAME}
+    password: ${SWINGHEIL_DB_PASSWORD}
+
+# for JPA config
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+          show_sql: false
+          format_sql: true
+          use_sql_comments: false
+
+# for logging
+logging:
+  level:
+    jdbc:
+      sqlonly: FATAL
+      audit: FATAL
+      connection: FATAL
+      resultset: FATAL
+
+
+## LOCAL ENVIRONMENT
+---
+spring:
+  profiles: local
+
+  datasource:
+    url: jdbc:log4jdbc:h2:mem:AZ;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: h2
+    properties:
+      hibernate:
+          show_sql: true
+
+
+## DEVELOPMENT ENVIRONMENT
+---
+spring:
+  profiles: dev
+
+  datasource:
+    url: jdbc:log4jdbc:mysql://localhost:3306/swingheil?verifyServerCertificate=false&useSSL=false&requireSSL=false
+
+
+## PRODUCTION ENVIRONMENT
+---
+spring:
+  profiles: prd
+
+  datasource:
+    url: jdbc:log4jdbc:mysql://localhost:3306/swingheil?verifyServerCertificate=false&useSSL=false&requireSSL=false
+
+  jpa:
+    hibernate:
+      ddl-auto: validate

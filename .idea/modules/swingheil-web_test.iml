@@ -20,8 +20,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="swingheil-web_main" />
     <orderEntry type="module" module-name="swingheil-service_main" />
+    <orderEntry type="module" module-name="swingheil-web_main" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-actuator:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE" level="project" />
@@ -36,6 +36,13 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: com.querydsl:querydsl-jpa:4.1.4" level="project" />
     <orderEntry type="library" name="Gradle: com.querydsl:querydsl-core:4.1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.16.20" level="project" />
@@ -84,16 +91,15 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.xmlunit:xmlunit-core:2.5.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.3.2" level="project" />
     <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.3.2" level="project" />
     <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.19" level="project" />
     <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:2.7.8" level="project" />
-    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.10.0" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Gradle: com.mysema.codegen:codegen:0.6.8" level="project" />
     <orderEntry type="library" name="Gradle: org.reflections:reflections:0.9.9" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
@@ -135,7 +141,6 @@
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.5" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:1.2" level="project" />
-    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.10.0" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:annotations:2.0.1" level="project" />
