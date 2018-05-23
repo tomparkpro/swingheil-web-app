@@ -33,10 +33,11 @@ dependencies {
     compile ('pro.tompark.swingheil:swingheil-service')
 
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-devtools')
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
     compile('javax.servlet:jstl')
     compile('javax.servlet:javax.servlet-api')
-    compile('javax.servlet:javax.servlet.jsp-api')
+
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

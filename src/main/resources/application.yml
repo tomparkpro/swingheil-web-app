@@ -28,6 +28,11 @@ spring:
       prefix: /WEB-INF/view/
       suffix: .jsp
 
+# for static resource reload
+  devtools:
+    livereload:
+      enabled: true
+
 # for logging
 logging:
   level:
@@ -73,3 +78,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+  devtools:
+    livereload:
+      enabled: false
