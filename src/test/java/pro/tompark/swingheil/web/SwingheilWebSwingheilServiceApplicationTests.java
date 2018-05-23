@@ -8,7 +8,7 @@ import pro.tompark.swingheil.SwingheilWebApplication;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SwingheilWebApplication.class)
-public class SwingheilWebApplicationTests {
+public class SwingheilWebSwingheilServiceApplicationTests {
 
     @Test
     public void contextLoads() {
