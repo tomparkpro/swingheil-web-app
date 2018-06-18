@@ -28,10 +28,18 @@ spring:
       prefix: /WEB-INF/view/
       suffix: .jsp
 
+
 # for static resource reload
   devtools:
     livereload:
       enabled: true
+
+# for Encoding UTF-8
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
 
 # for logging
 logging:

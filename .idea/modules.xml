@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service.iml" filepath="$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service_main.iml" group="swingheil-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1740916362/swingheil-service_test.iml" group="swingheil-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swingheil-web.iml" filepath="$PROJECT_DIR$/.idea/modules/swingheil-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swingheil-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/swingheil-web_main.iml" group="swingheil-web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/swingheil-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/swingheil-web_test.iml" group="swingheil-web" />

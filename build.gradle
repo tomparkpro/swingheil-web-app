@@ -5,9 +5,13 @@ buildscript {
     }
     repositories {
         mavenCentral()
+        maven {
+            url  "https://dl.bintray.com/tomparkpro/swingheil-utils"
+        }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+//        classpath('pro.tompark.swingheil:swingheil-service:0.1.0.RELEASE')
     }
 }
 
@@ -26,12 +30,14 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+        url  "https://dl.bintray.com/tomparkpro/swingheil-utils"
+    }
 }
 
 
 dependencies {
-    compile ('pro.tompark.swingheil:swingheil-service')
-
+    compile('pro.tompark.swingheil:swingheil-service:0.1.1.RELEASE')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-devtools')
     compile('org.apache.tomcat.embed:tomcat-embed-jasper')
