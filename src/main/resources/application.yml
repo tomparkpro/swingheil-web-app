@@ -72,7 +72,7 @@ spring:
   profiles: dev
 
   datasource:
-    url: jdbc:log4jdbc:mysql://localhost:3306/swingheil?verifyServerCertificate=false&useSSL=false&requireSSL=false
+    url: jdbc:log4jdbc:${SWINGHEIL_DB_CONNECTION_STRING}?verifyServerCertificate=false&useSSL=false&requireSSL=false
 
 
 ## PRODUCTION ENVIRONMENT
@@ -81,7 +81,7 @@ spring:
   profiles: prd
 
   datasource:
-    url: jdbc:log4jdbc:mysql://localhost:3306/swingheil?verifyServerCertificate=false&useSSL=false&requireSSL=false
+    url: jdbc:log4jdbc:${SWINGHEIL_DB_CONNECTION_STRING}?verifyServerCertificate=false&useSSL=false&requireSSL=false
 
   jpa:
     hibernate:
