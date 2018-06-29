@@ -67,19 +67,6 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.xhtml
-
 ### Gradle ###
 .gradle
 **/build/

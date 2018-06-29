@@ -49,7 +49,7 @@ The swingheil-web-app is licensed under the terms of the GPL Open Source
 license and is available for free.
 
 
-## Links
+## Links 
 
 * [Facebook page](https://www.facebook.com/swingheilapp)
 * [Issue tracker](https://github.com/tomparkpro/swingheil-web-app/issues)
