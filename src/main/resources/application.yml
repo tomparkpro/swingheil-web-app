@@ -8,6 +8,8 @@ spring:
     url: ${SWINGHEIL_DB_CONNECTION_STRING}
     username: ${SWINGHEIL_DB_USERNAME}
     password: ${SWINGHEIL_DB_PASSWORD}
+    hikari: # Limit the pool size, because of free version of jawsdb (max_user_connection = 10)
+      maximum-pool-size: 3
 
 # for JPA
   jpa:
