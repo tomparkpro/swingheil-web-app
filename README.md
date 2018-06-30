@@ -10,26 +10,46 @@ It requires [swingheil-service](https://github.com/tomparkpro/swingheil-service)
 
 [![SwingHeil App Banner](https://t1.daumcdn.net/cfile/tistory/9912074C5B3066E107)](https://github.com/tomparkpro/swingheil-service/)
 
+
 ## Table of content
 
 - [Installation](#installation)
     - [DB setup](#db-setup)
     - [Upload to Heroku](#upload-to-heroku)
+- [Techlonogy](#technology)    
 - [Development RoadMap](#development-roadmap)
 - [License](#license)
 - [Links](#links)
+
 
 ## Installation
 
 The SwingHeil Web App project requires swingheil-service project.
 
+
 ### DB setup
 
-comming soon..
+SwingHeil uses Heroku as PaaS, add JawsDB MySQL add-ons.
+
+#### Set Config Vars 
+
+Heroku Dashboard > Settings > Config Vars
+
+- JAVA_OPTS : -Dspring.profiles.active=dev
+- SWINGHEIL_DB_CONNECTION_STRING : jdbc:log4jdbc:mysql://DOMAIN_FROM_JAWSDB:3306/DATABASE_NAME_FROM_JAWSDB?verifyServerCertificate=false&useSSL=false&requireSSL=false
+- SWINGHEIL_DB_USERNAME : the username from JawsDB Dashboard
+- SWINGHEIL_DB_PASSWORD : the password from JawsDB Dashboard
 
 ### Upload to Heroku
 
-comming soon..
+Heroku Dashboard > Deploy > App connected to Github : connect the github project.
+
+Manual deploy : push the Deploy Branch button
+
+
+## Technology
+
+- Spring Boot, JPA, Java 8, Java EE, Hibernate, gradle, yml, Heroku, MySQL
 
 
 ## Development RoadMap
@@ -37,7 +57,7 @@ comming soon..
 - [x] initial setup springboot project
 - [x] setup MySQL DB
 - [x] add event CRUD jsp
-- [ ] upload web app to Heroku
+- [x] upload web app to Heroku
 - [ ] add member feature
 - [ ] add login feature
 - [ ] add security feature
