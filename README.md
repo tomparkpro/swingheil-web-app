@@ -8,6 +8,8 @@ swingheil-web-app
 The swingheil-web-app is back-end web page for swing dance event organizer.
 It requires [swingheil-service](https://github.com/tomparkpro/swingheil-service) library. If you make events on admin page, end user can check them on the SwingHeil Andoird/iOS app.
 
+Check the Dev Server on Heroku [https://swingheil-web.herokuapp.com](https://swingheil-web.herokuapp.com/)
+
 [![SwingHeil App Banner](https://t1.daumcdn.net/cfile/tistory/9912074C5B3066E107)](https://github.com/tomparkpro/swingheil-service/)
 
 
