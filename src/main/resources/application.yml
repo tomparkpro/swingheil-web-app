@@ -5,6 +5,7 @@ spring:
 # for DB Connection
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: ${SWINGHEIL_DB_CONNECTION_STRING}
     username: ${SWINGHEIL_DB_USERNAME}
     password: ${SWINGHEIL_DB_PASSWORD}
 
@@ -71,17 +72,11 @@ spring:
 spring:
   profiles: dev
 
-  datasource:
-    url: jdbc:log4jdbc:${SWINGHEIL_DB_CONNECTION_STRING}?verifyServerCertificate=false&useSSL=false&requireSSL=false
-
 
 ## PRODUCTION ENVIRONMENT
 ---
 spring:
   profiles: prd
-
-  datasource:
-    url: jdbc:log4jdbc:${SWINGHEIL_DB_CONNECTION_STRING}?verifyServerCertificate=false&useSSL=false&requireSSL=false
 
   jpa:
     hibernate:
